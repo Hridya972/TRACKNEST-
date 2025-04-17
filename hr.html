@@ -62,57 +62,50 @@
           <option>Other</option>
         </select>
       </label>
-      <label>Amount: <input type="number" placeholder="₹" /></label>
-      <label>Date: <input type="date" /></label>
       
-        </select>
-      </label>
-      <label>Tags: <input type="text" placeholder="#groceries #bills" /></label>
-      <label>Notes: <textarea placeholder="Add a note..."></textarea></label>
+
+
+
+      <label>Amount: <input type="number" id="amount" required/></label>
+      <label>Date: <input type="date" id="date" required/></label>
+      <label>Tags: <input type="text" id="tags"/></label>
+      <label>Notes: <textarea id="note"></textarea></label>
       <button type="submit">Add Expense</button>
     </form>
   </section>
-<!-- Expense List -->
-<section class="expense-list">
+
+  <section class="expense-list fade-in">
     <h2>Expense History</h2>
     <table>
       <thead>
-        <tr>
-          <th>Date</th>
-          <th>Category</th>
-          <th>Amount</th>
-          <th>Tags</th>
-          <th>Note</th>
-        </tr>
+        <tr><th>Date</th><th>Category</th><th>Amount</th><th>Tags</th><th>Note</th></tr>
       </thead>
-      <tbody>
-        
-      </tbody>
+      <tbody id="expense-table-body"></tbody>
     </table>
   </section>
+
+  <section class="bank-balance fade-in">
+    <h2>Bank Balance: ₹<span id="bank-balance">0</span></h2>
+    <form onsubmit="updateBalance(event)">
+      <input type="number" id="balance-input" placeholder="Add/Adjust Balance" required/>
+      <button type="submit">Update Balance</button>
+    </form>
+  </section>
+
+  <section class="total-spent fade-in">
+    <h2>Total Cash Spent: ₹<span id="total-spent">0.00</span></h2>
+  </section>
+
+  <section class="reset-section fade-in">
+    <button onclick="resetApp()" class="reset-btn">Reset All Data</button>
+  </section>
 </main>
-<!-- Bank Balance Section -->
-<div class="bank-balance">
-  <h3>Bank Account Balance</h3>
-  <p class="balance-amount">₹ <span id="bank-balance">0.00</span></p>
 
-  <!-- Optional: Add income/update balance -->
-  <form class="balance-form" onsubmit="updateBalance(event)">
-    <input type="number" id="balance-input" placeholder="Add/Adjust Balance" required />
-    <button type="submit">Update Balance</button>
-  </form>
-<!-- Total Spent Section -->
-<div class="total-spent">
-  <h3>Total Cash Spent</h3>
-  <p class="spent-amount">₹ <span id="total-spent">0.00</span></p>
-</div>
-</div>
+    <footer>
 
 
-<div class="cta-buttons">
-  
-  <button class="btn-secondary" id="restartBtn">Restart</button>
-</div>
+
+
 
 
 

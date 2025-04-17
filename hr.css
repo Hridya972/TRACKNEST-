@@ -226,3 +226,130 @@ body {
     background-color: rgba(98, 51, 152, 0.1);
   }
   
+
+
+
+
+
+
+
+
+  
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  main, .bank-balance {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  h2, h3 {
+    color: #2b2d42;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  input[type="number"],
+  input[type="date"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 12px;
+    border: 2px solid #dcdcdc;
+    outline: none;
+    transition: border 0.3s;
+    font-size: 16px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #150f93;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  button {
+    background: #0c0594;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #160f78;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background: #110d6a;
+    color: white;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .balance-amount, .spent-amount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0a0d59;
+  }
+  
+  .balance-form {
+    margin-top: 15px;
+  }
+  
+  .cta-buttons {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .btn-secondary {
+    background-color: #100750;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #481389;
+  }
